@@ -1,0 +1,14 @@
+[package]
+name = "rust-ingestion-pg"
+version = "0.1.0"
+authors = ["Naim Aryudya <naimaryudya@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlx = { version = "0.5.1", features = [ "runtime-tokio-native-tls", "any", "json", "bigdecimal", "mysql", "postgres", "sqlite"] }
+dotenv = "0.15.0"
+tokio-postgres = "0.7.0"
+tokio = { version = "1.1.1", features = ["full"] }
+futures = "0.3.13"
